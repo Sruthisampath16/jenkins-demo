@@ -1,6 +1,10 @@
 pipeline {
     agent any
-
+    
+    triggers {
+        pollSCM('* * * * *')
+    }
+    
     environment {
         APP_NAME = 'hello-app'
     }
