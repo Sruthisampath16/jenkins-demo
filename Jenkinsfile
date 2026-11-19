@@ -26,6 +26,6 @@ pipeline {
 
     post {
         success { echo 'Pipeline is succeeded' }
-        failure { echo 'Pipeline is failed' }
+        failure { echo 'Pipeline failed' }
     }
 }
